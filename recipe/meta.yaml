@@ -28,13 +28,13 @@ requirements:
     - {{ compiler('cxx') }}
 
   host:
-    - python >=3.6
+    - python >=3.8
     - setuptools >=42
     - wheel
     - cmake >=3.15
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy >=1.16.2
     - pillow >=5.2.0
     - scipy >=1.4.1
