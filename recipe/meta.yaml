@@ -1,5 +1,5 @@
 {% set name = "scenepic" %}
-{% set version = "1.0.18" %}
+{% set version = "1.0.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,16 @@ package:
 
 source:
   url: https://github.com/microsoft/scenepic/archive/v{{ version }}.tar.gz
-  sha256: 2566e1fe839c61b3ed427931e0151cb07bed9468d1ccca74f3cb6be2a35aa1dd
+  sha256: be90503ed383b7d92680b61c07c7ad5f1a15533d5621b0c4b8ec9b27bbf7ca58
 
 
 build:
-  number: 2
-  script: 
+  number: 0
+  script:
     - python -m pip install . -vvv
     - set CMAKE_GENERATOR=Ninja      # [win]
     - set CMAKE_GENERATOR_TOOLSET=   # [win]
     - set CMAKE_GENERATOR_PLATFORM=  # [win]
-    
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
@@ -51,7 +50,7 @@ test:
 
 about:
   home: https://microsoft.github.io/scenepic/
-  summary: 'Powerful, easy to use, and portable visualization toolkit for mixed 3D and 2D content'
+  summary: Powerful, easy to use, and portable visualization toolkit for mixed 3D and 2D content
 
   description: |
     ScenePic was created for 3D computer vision researchers such as those in Mixed Reality, 
@@ -67,4 +66,3 @@ about:
 extra:
   recipe-maintainers:
     - jnyfah
-    
