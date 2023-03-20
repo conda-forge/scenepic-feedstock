@@ -1,5 +1,5 @@
 {% set name = "scenepic" %}
-{% set version = "1.0.19" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/microsoft/scenepic/archive/v{{ version }}.tar.gz
-  sha256: be90503ed383b7d92680b61c07c7ad5f1a15533d5621b0c4b8ec9b27bbf7ca58
+  sha256: 95b8b252045ea0fe14ad6184183237ef89e32e40731566d2307b9c7535d69cbd
 
 
 build:
