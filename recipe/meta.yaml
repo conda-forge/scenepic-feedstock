@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script:
     - python -m pip install . -vvv
     - set CMAKE_GENERATOR=Ninja      # [win]
