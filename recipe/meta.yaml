@@ -1,5 +1,5 @@
 {% set name = "scenepic" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/microsoft/scenepic/archive/v{{ version }}.tar.gz
-  sha256: 95b8b252045ea0fe14ad6184183237ef89e32e40731566d2307b9c7535d69cbd
+  sha256: a0e3ad653201db035a09baf475757cd31c604ba81f6857240f80cc8695734af5
 
 
 build:
-  number: 2
+  number: 0
   script:
     - python -m pip install . -vvv
     - set CMAKE_GENERATOR=Ninja      # [win]
