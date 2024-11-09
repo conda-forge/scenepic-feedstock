@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/microsoft/scenepic/archive/v{{ version }}.tar.gz
-  sha256: a0e3ad653201db035a09baf475757cd31c604ba81f6857240f80cc8695734af5
+  sha256: AA9E133C3C11D524919EC4B5B8269B77EEE9179646AB4D7064BEFA16B6246288
 
 
 build:
