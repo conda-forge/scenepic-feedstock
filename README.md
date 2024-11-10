@@ -304,4 +304,5 @@ Feedstock Maintainers
 =====================
 
 * [@jnyfah](https://github.com/jnyfah/)
+* [@matajoh](https://github.com/matajoh/)
 
